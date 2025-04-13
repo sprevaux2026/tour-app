@@ -1,6 +1,6 @@
 // App.tsx
 import React, { useState } from 'react';
-import Gallery from './components/Gallery';
+import Gallery from './components/Gallery.tsx';
 import './styles/styles.css';
 
 // Define a type for a Tour

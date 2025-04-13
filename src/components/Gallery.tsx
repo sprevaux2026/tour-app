@@ -1,6 +1,6 @@
 // Gallery.tsx
 import React, { useEffect, useState } from 'react';
-import TourCard from './TourCard';
+import TourCard from './TourCard.tsx';
 import { Tour } from '../App';
 
 // Define props interface for Gallery component.
@@ -10,7 +10,8 @@ interface GalleryProps {
   removeTour: (id: string) => void;
 }
 
-const url = 'https://course-api.com/react-tours-project';
+const url = '/api/react-tours-project';
+
 
 const Gallery: React.FC<GalleryProps> = ({ tours, setTours, removeTour }) => {
   const [loading, setLoading] = useState<boolean>(true);
